@@ -1,0 +1,4 @@
+\begin{quantikz}[thin lines, transparent]
+  \lstick{$\ket{A}$} & \ctrl{1} & \rstick{$\ket{A}$} \\
+  \lstick{$\ket{B}$} & \targ{} & \rstick{$\ket{B \xor A}$}
+\end{quantikz}

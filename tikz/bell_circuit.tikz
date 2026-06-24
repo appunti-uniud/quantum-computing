@@ -1,0 +1,4 @@
+\begin{quantikz}[thin lines, transparent]
+  \lstick{x} & \gate{H} & \ctrl{1} & \midstick[2,brackets=none]{$\ket{\b_{xy}}$} \\
+  \lstick{y} & & \targ{} &
+\end{quantikz}

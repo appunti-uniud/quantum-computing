@@ -1,0 +1,7 @@
+\begin{quantikz}[thin lines,transparent, row sep=0.6cm]
+  \lstick{$\ket{a}$} & \ctrl{1} & \targ{} & \ctrl{1} & \rstick{$\ket{b}$} \\
+  \lstick{$\ket{b}$} & \targ{} & \ctrl{-1} & \targ{} & \rstick{$\ket{a}$}
+\end{quantikz}\quad \equiv \quad\begin{quantikz}[thin lines,transparent, row sep=0.9cm]
+ \lstick{$\ket{a}$} & \swap{1} & \rstick{$\ket{b}$} \\
+ \lstick{$\ket{b}$} & \targX{} & \rstick{$\ket{a}$}
+\end{quantikz}

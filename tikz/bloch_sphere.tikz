@@ -1,0 +1,38 @@
+\begin{tikzpicture}
+
+  % Define radius
+  \def\r{3}
+
+  \coordinate (orig) at (0,0);
+  \coordinate (x) at (-1cm+0.3ex, -1cm+0.3ex);
+  \coordinate (y) at (\r, 0);
+  \coordinate (z) at (0, 3cm-0.6ex);
+  \coordinate (psi) at (\r/3, 3/5*\r);
+  \coordinate (phi) at (\r/3, -\r/6);
+  \coordinate (bot) at (0, 3cm-0.6ex);
+
+  % Bloch vector
+  \draw[thick] (orig) -- (psi) node[circle, fill, inner sep=2, label={[label distance=-3pt]above right:$\ket{\psi}$}] {};
+  \draw[dashed] (orig) -- (phi) -- (psi);
+
+  % Sphere
+  \draw[thick] (orig) circle (\r);
+  \draw[dashed] (orig) ellipse (\r{} and \r/3);
+
+  % Axes
+  \draw[thick, -triangle 60] (orig) -- (x) node[below left] {$x$};
+  \draw[thick, -triangle 60] (orig) -- (y) node[right] {$y$};
+  \draw[thick, -triangle 60] (orig) -- (z) node[below right] {$z$};
+  \draw[dashed] (orig) -- (bot);
+
+  % Angles
+  \pic [draw=black, "$\phi$", angle eccentricity=1.5, angle radius=0.4cm] {angle = x--orig--phi};
+  \pic [draw=black, "$\theta$", angle eccentricity=1.2, angle radius=1.4cm] {angle = psi--orig--z};
+
+  % Ket
+  \draw[thick, fill=white] (0,\r) circle (.6ex);
+  \draw[thick, fill=white] (0,-\r) circle (.6ex);
+  \node at (0,\r+0.4) {$\ket{0}$};
+  \node at (0,-\r-0.5) {$\ket{1}$};
+
+\end{tikzpicture}

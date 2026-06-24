@@ -1,0 +1,5 @@
+\begin{quantikz}[thin lines, transparent]
+  \lstick{a} & \ctrl{2} & \rstick{a} \\
+  \lstick{b} & \control{} & \rstick{b} \\
+  \lstick{c} & \targ{} & \rstick{$\text{c}\xor\text{ab}$}
+\end{quantikz}

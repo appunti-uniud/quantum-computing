@@ -1,0 +1,4 @@
+\begin{quantikz}[thin lines, transparent, slice all, slice style=gray]
+  & \gate{H} & \ctrl{1} & \gate{H} & \\
+  & \gate{H} & \gate{U_f} & \gate{H} &
+\end{quantikz}

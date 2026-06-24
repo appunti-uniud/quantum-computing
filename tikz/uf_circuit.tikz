@@ -1,0 +1,4 @@
+\begin{quantikz}[thin lines, transparent]
+  \lstick{$\displaystyle\frac{\ket{0} + \ket{1}}{\sqrt{2}}$} & \gate[2][2cm]{U_f}\gateinput{$x$}\gateoutput{$x$} & \rstick[2,brackets=none]{$\ket{\psi}$} \\
+  \lstick{$\ket{0}$} & \gateinput{$y$}\gateoutput{$y \xor f(x)$} &
+\end{quantikz}
